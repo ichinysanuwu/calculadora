@@ -1,0 +1,41 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volumen de Estructuras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/UNMSM_escudo_XVI-XXI_transparente_siglas_nombre_vertical.svg" alt="Logo UNMSM" class="logo">
+        <h1>Calculo de Volumen de Estructuras</h1>
+        <div class="form">
+            <div class="input-group">
+                <input type="number" id="length" placeholder="Largo (L)" min="0" step="0.001">
+                <span class="unit">km</span>
+            </div>
+            <div class="input-group">
+                <input type="number" id="width" placeholder="Ancho (A)" min="0" step="0.001">
+                <span class="unit">km</span>
+            </div>
+            <div class="input-group">
+                <input type="number" id="height" placeholder="Altura (H)" min="0" step="0.001">
+                <span class="unit">km</span>
+            </div>
+            <button onclick="calculateVolume()"><i class="fas fa-calculator"></i> Calcular</button>
+            <button onclick="resetForm()"><i class="fas fa-redo"></i> Restablecer</button>
+        </div>
+        <div class="result">
+            <canvas id="volumeChart" width="300" height="300"></canvas>
+        </div>
+        <div class="footer">
+            <p>Jhosef Montoya Ingeniero del Prompt</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/UNMSM_escudo_XVI-XXI_transparente_siglas_nombre_vertical.svg" alt="Logo UNMSM" class="footer-logo">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
